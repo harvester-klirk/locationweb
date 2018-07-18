@@ -7,13 +7,16 @@
 </head>
 <body>
 <div th:text="LLLLLLLLLLLLLLLL">xxxxx xxxxxxx</div>
-<form action="" method="post">
+<form action="saveLoc" method="post">
+    <pre>
 Id: <input type="text" name="id">
     Code: <input type="text" name="name"/>
     Name: <input type="text" name="code"/>
-    Type: Urban<input type="radio" name="type"/>
-          Rural<input type="radio" name="type"/>
+    Type: Urban<input type="radio" name="type" value="Urban"/>
+          Rural<input type="radio" name="type" value="Rural"/>
     <input type="submit" value="Save"/>
+        </pre>
 </form>
+<div th:text="${msg}">The messaged : </div>
 </body>
 </html>
